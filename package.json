@@ -1,0 +1,12 @@
+{
+	"name": "order-summary-component-main",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/Yellow-May/Frontend-Mentor-Order-Summary-Component.git",
+	"author": "The Yellow May <yellow.may.21@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"build:dev": "npx tailwindcss -i ./assets/css/index.css -o ./assets/css/style.css --watch",
+		"build:prod": "npx tailwindcss -i ./assets/css/index.css -o ./assets/css/style.css --minify"
+	}
+}
