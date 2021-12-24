@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Yellow-May/Frontend-Mentor-Order-Summary-Component)
-- Live Site URL: [Vecel App](https://your-live-site-url.com)
+- Live Site URL: [Vecel App](https://frontend-mentor-order-summary-component-brown.vercel.app/)
 
 ## My process
 
