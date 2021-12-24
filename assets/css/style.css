@@ -1,9 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
+:root {
+	--pale-blue: hsl(225, 100%, 94%);
+	--bright-blue: hsl(245, 75%, 52%);
+
+	--very-pale-blue: hsl(225, 100%, 98%);
+	--desaturated-blue: hsl(224, 23%, 55%);
+	--dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 3rem 5%;
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 1em;
+	background-image: url(../images/pattern-background-mobile.svg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+main {
+	max-width: 360px;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.125);
+}
+
+main > .head > img {
+	width: 100%;
+}
+
+main > .body {
+	padding: 2rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+main > .body > h2 {
+	font-size: 1.75em;
+}
+
+main > .body > p {
+	font-size: 1em;
+	line-height: 1.75;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+main > .body > div {
+	margin-bottom: 1.5rem;
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main > .body > div > div > h4 {
+	font-size: 1.125em;
+	margin-bottom: 0.125rem;
+}
+
+main > .body > div > div > span {
+	font-size: 0.85em;
+}
+
+main > .body > div > button {
+	margin-left: 2.5rem;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background: none;
+	text-decoration: underline;
+	transition: 0.25s;
+}
+
+main > .body > div > button:hover {
+	color: var(--dark-blue);
+}
+
+main > .body > button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	padding: 0.75rem;
+	background: none;
+	font-size: 1em;
+	transition: 0.25s;
+}
+
+main > .body > button.first {
+	background-color: var(--bright-blue);
+	color: white;
+	border-radius: 0.5rem;
+	margin-bottom: -0.5rem;
+	box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.125);
+}
+
+main > .body > button.second:hover {
+	font-weight: 700;
+}
+
+main > .body > button.first:hover {
+	background-color: var(--dark-blue);
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+	body {
+		background-image: url(../images/pattern-background-desktop.svg);
+	}
 }
