@@ -127,11 +127,11 @@ main > .body > button.first:hover {
 	background-color: var(--dark-blue);
 }
 
-.attribution {
+footer.attribution {
 	font-size: 11px;
 	text-align: center;
 }
-.attribution a {
+footer.attribution a {
 	color: hsl(228, 45%, 44%);
 }
 
