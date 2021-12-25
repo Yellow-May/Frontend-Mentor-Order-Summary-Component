@@ -58,7 +58,7 @@ main > .body {
 	background-color: white;
 }
 
-main > .body > h2 {
+main > .body > h1 {
 	font-size: 1.75em;
 }
 
@@ -77,7 +77,7 @@ main > .body > div {
 	align-items: center;
 }
 
-main > .body > div > div > h4 {
+main > .body > div > div > h2 {
 	font-size: 1.125em;
 	margin-bottom: 0.125rem;
 }
